@@ -11,6 +11,15 @@ const projects = [
     featured: true,
   },
   {
+    name: "Anonymous Pear Music",
+    type: "MUSIC / WEB",
+    description:
+      "A modern music platform built with a focused, premium interface for discovering and experiencing music.",
+    stack: ["React", "TypeScript", "Music", "Web"],
+    href: "https://anonymouspearmusic.lovable.app",
+    featured: true,
+  },
+  {
     name: "device_xiaomi_raphael",
     type: "ANDROID",
     description:
