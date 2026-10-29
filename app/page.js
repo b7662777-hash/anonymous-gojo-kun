@@ -2,10 +2,28 @@ import Link from "next/link";
 
 const projects = [
   {
-    name: "SYSTEM_JINWOO",
-    type: "AI / SYSTEMS",
+    name: "VĀKYA",
+    type: "LANGUAGE ENGINEERING / ALPHA",
     description:
-      "Native AI development workspace combining multi-model AI chat, project management, terminal tooling and local credential protection.",
+      "Experimental Romanized Sanskrit programming language with lexer, parser, static-analysis, interpreter, bytecode VM and native-backend components. Explore the source, examples and verification instructions.",
+    stack: ["Python", "Compiler", "Bytecode", "VM", "Alpha"],
+    href: "https://github.com/b7662777-hash/vakya-programming-language",
+    featured: true,
+  },
+  {
+    name: "Smart A4 PDF Formatter",
+    type: "DOCUMENT TOOLING / DEVELOPMENT",
+    description:
+      "Local image-processing utility that corrects rotation, enhances and crops images, arranges up to four images per A4 layout, and exports PDFs in a ZIP. Under development; review limitations before deployment.",
+    stack: ["Python", "FastAPI", "OpenCV", "Pillow", "PDF"],
+    href: "https://github.com/b7662777-hash/smart-a4-pdf-formatter",
+    featured: true,
+  },
+  {
+    name: "SYSTEM_JINWOO",
+    type: "AI / DESKTOP DEVELOPMENT",
+    description:
+      "Native AI development workspace combining multi-model AI chat, project management, terminal tooling and local credential protection. Review build instructions and security notes before use.",
     stack: ["Rust", "Tauri", "React", "TypeScript", "AI"],
     href: "https://github.com/b7662777-hash/SYSTEM_JINWOO",
     featured: true,
@@ -14,67 +32,67 @@ const projects = [
     name: "Anonymous Pear Music",
     type: "MUSIC / WEB",
     description:
-      "A modern music platform built with a focused, premium interface for discovering and experiencing music.",
+      "Music discovery and streaming web project with a public sign-in experience. Explore the live app; access and available features may depend on account and service configuration.",
     stack: ["React", "TypeScript", "Music", "Web"],
     href: "https://anonymouspearmusic.lovable.app",
     featured: true,
   },
   {
     name: "device_xiaomi_raphael",
-    type: "ANDROID",
+    type: "ANDROID / SOURCE COMPONENT",
     description:
-      "Android device-tree work for Xiaomi Redmi K20 Pro (raphael), focused on platform and custom ROM development.",
+      "Android device configuration for Xiaomi Redmi K20 Pro (raphael). Part of a custom ROM source tree rather than a standalone app; branch, vendor and kernel compatibility matter.",
     stack: ["Android", "AOSP", "Device Tree", "Make"],
     href: "https://github.com/b7662777-hash/device_xiaomi_raphael",
     featured: true,
   },
   {
     name: "kernel_xiaomi_raphael",
-    type: "KERNEL",
+    type: "KERNEL / SOURCE COMPONENT",
     description:
-      "Linux kernel development work targeting the Xiaomi Redmi K20 Pro platform.",
+      "Linux kernel source targeting Xiaomi Redmi K20 Pro. Inspect upstream history, local changes and matching device/build configuration before compiling or flashing.",
     stack: ["C", "Linux", "Kernel", "Android"],
     href: "https://github.com/b7662777-hash/kernel_xiaomi_raphael",
     featured: true,
   },
   {
     name: "Action-TWRP-Builder",
-    type: "RECOVERY / AUTOMATION",
+    type: "RECOVERY / BUILD AUTOMATION",
     description:
-      "GitHub Actions based Android recovery build automation for reproducible TWRP builds.",
+      "GitHub Actions based TWRP recovery build workflow. Review its inputs, device configuration and actual build results before relying on generated artifacts.",
     stack: ["Shell", "GitHub Actions", "TWRP", "Android"],
     href: "https://github.com/b7662777-hash/Action-TWRP-Builder",
   },
   {
     name: "anonymous-saver",
-    type: "APPLICATION",
+    type: "DOCUMENT TOOLING / EXPERIMENT",
     description:
-      "Privacy-focused PDF transformation tool that creates customizable dark-mode reading versions of documents.",
+      "Document-transformation project exploring customizable dark-mode reading versions of PDFs. Check the repository for current implementation, setup and limitations.",
     stack: ["React", "Vite", "Python", "FastAPI", "OpenCV"],
     href: "https://github.com/b7662777-hash/anonymous-saver",
   },
   {
     name: "GrahaLens",
-    type: "AI / WEB",
+    type: "AI / PRODUCT PROTOTYPE",
     description:
-      "AI-assisted Vedic astrology product foundation built around structured birth-chart analysis and research-oriented insights.",
-    stack: ["Next.js", "React", "TypeScript", "Supabase", "AI"],
+      "Vedic astrology product shell built with Next.js and Supabase libraries. Birth-chart storage and AI interpretation are planned capabilities, not a completed analysis engine.",
+    stack: ["Next.js", "React", "TypeScript", "Supabase", "Prototype"],
     href: "https://github.com/b7662777-hash/GrahaLens",
   },
   {
     name: "Action-OFRP-Builder",
-    type: "RECOVERY / AUTOMATION",
+    type: "RECOVERY / BUILD AUTOMATION",
     description:
-      "Automated OrangeFox recovery build workflow using GitHub Actions.",
+      "OrangeFox recovery build workflow using GitHub Actions. Match the source and device branches, inspect build results, and verify artifacts before use.",
     stack: ["Shell", "GitHub Actions", "OrangeFox"],
     href: "https://github.com/b7662777-hash/Action-OFRP-Builder",
   },
   {
     name: "awesome-android-aosp",
-    type: "ANDROID / RESOURCES",
+    type: "ANDROID / PLANNED RESOURCES",
     description:
-      "Curated Android and AOSP resources covering platform engineering, device development, recovery, kernels and tooling.",
-    stack: ["AOSP", "Android", "Resources"],
+      "Starting point for an Android and AOSP reference collection. Resource entries are still to be populated; this is not yet a complete curated directory.",
+    stack: ["AOSP", "Android", "Planned Resources"],
     href: "https://github.com/b7662777-hash/awesome-android-aosp",
   },
 ];
@@ -154,8 +172,9 @@ export default function Home() {
               Security.
             </h1>
             <p className="hero-copy">
-              I build custom Android systems, ROM infrastructure, applications,
-              AI-powered developer tools and security-oriented software.
+              I build and experiment with Android systems, ROM infrastructure,
+              applications and AI-powered developer tools, with an interest in
+              authorized security research.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#work">
@@ -207,8 +226,9 @@ export default function Home() {
             <h2>Selected work</h2>
           </div>
           <p>
-            A selection of projects across Android platform engineering,
-            applications, AI and systems development.
+            Language experiments, practical utilities and Android source work.
+            Project labels distinguish prototypes, development tools and source
+            components; follow each repository for setup, limitations and credits.
           </p>
         </div>
 
@@ -247,9 +267,10 @@ export default function Home() {
               <span className="eyebrow">PLATFORM ENGINEERING</span>
               <h3>From source tree to bootable system.</h3>
               <p>
-                My Android work covers the components that make a device
-                actually boot, build and behave as a complete system — not
-                just application development.
+                My Android work explores device configuration, kernels,
+                recovery and build automation. These components build on
+                upstream projects and require matching source branches and
+                device-specific validation.
               </p>
               <a href="#work" className="text-link">
                 View Android projects <Arrow />
@@ -267,8 +288,9 @@ export default function Home() {
             <h2>Security with an engineering mindset.</h2>
             <p>
               Android security, ROM analysis, reverse engineering, system
-              hardening and security tooling. The goal is understanding how
-              systems work and where they fail — then building better ones.
+              hardening and security tooling. Research belongs in systems I
+              own or have explicit permission to assess: understand how they
+              work, test within scope, and document what can be improved.
             </p>
             <div className="security-tags">
               <span>Android Security</span>
@@ -299,8 +321,10 @@ export default function Home() {
               developer tools.
             </p>
             <p>
-              The portfolio is intentionally project-driven. Code, systems
-              and shipped software are the proof.
+              This portfolio includes active experiments and upstream-based
+              source work, not only finished products. Repository history,
+              documentation and reproducible checks are the basis for
+              evaluating each project and its contributions.
             </p>
           </div>
         </div>
